@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>About the Dessert Collector</h1>
+<hr />
+<p class="pages">A place to collect your favorite dessert recipes. Use the convenient calendar feature
+    to properly organize the steps leading up to baking day.</p>
+<p class="pages">Once you know your guest list, use the allergens guide so you can be confident all of
+    your guests can enjoy your special treats.
+</p>
+<br>
+<h5>How to use the Dessert Collector</h5>
+<ul>
+    <li>To search for dessert ideas, explore the <a href="{% url 'index' %}">View All My Desserts</a> page </li>
+    <li>If you select one of the suggested options, select it and schedule your prep dates using the built in calendar</li>
+    <li>Do you see a favorite dessert missing from the list? Feel free to include it on the <a href="{% url 'desserts_create' %}">Add a Dessert</a> page.</li>
+</ul>
+
+{% endblock %}
